@@ -19,7 +19,7 @@ def update_list(url, directory)
   package_list = HTTP.get url
   # Saves the file to list.json
   if File.open(directory + 'list.json', 'w') { |file| file.write(package_list) }
-    puts "Downloaded lits.json to ".green + directory.green
+    puts "Downloaded list.json to ".green + directory.green
   end
 end
 
